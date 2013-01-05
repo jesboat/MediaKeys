@@ -1,0 +1,12 @@
+//
+//  MediaKeys-Prefix.pch
+//  MediaKeys
+//
+//  Created by Jonathan Sailor on 2013-01-05.
+//  Copyright (c) 2013 Jonathan Sailor.
+//
+
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
