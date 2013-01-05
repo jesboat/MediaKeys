@@ -36,6 +36,7 @@
 		FC3936FD16987C0A00018B9D /* MKExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKExecutor.h; sourceTree = "<group>"; };
 		FC3936FE16987C0A00018B9D /* MKExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKExecutor.m; sourceTree = "<group>"; };
 		FC3937001698863A00018B9D /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		FC7A5C3A1698EFD600F909F4 /* arc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = arc.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		FC3936CA16983ED400018B9D = {
 			isa = PBXGroup;
 			children = (
+				FC7A5C3A1698EFD600F909F4 /* arc.h */,
 				FC3936F9169868BB00018B9D /* SPMediaKeyTap */,
 				FC3936DF16983ED400018B9D /* MediaKeys */,
 				FC3936D816983ED400018B9D /* Frameworks */,
@@ -296,6 +298,7 @@
 				FC3936F516983ED400018B9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

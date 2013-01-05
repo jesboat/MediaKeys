@@ -10,12 +10,8 @@
 #import <Foundation/Foundation.h>
 
 
-@interface MKExecutor : NSObject {
-    NSFileHandle* devnull;
-}
+@interface MKExecutor : NSObject
 
-+(MKExecutor*)executor;
-
--(void)runCommand:(NSString*)cmd;
++(void)spawnCommand:(NSString*)cmd;
 
 @end

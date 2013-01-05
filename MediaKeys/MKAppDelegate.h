@@ -27,7 +27,7 @@
 
 @property (assign) BOOL tapEnabled;
 
-@property (assign) SPMediaKeyTap* keyTap;
+@property (retain) SPMediaKeyTap* keyTap;
 
 - (NSString*)defaultsKeyForKeycode:(int)keycode;
 

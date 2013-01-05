@@ -96,7 +96,7 @@ static void setDefault(NSString* key, id val) {
         NSString* cmd = [[NSUserDefaults standardUserDefaults] stringForKey:defaultsKey];
         if (cmd == nil || [cmd length] == 0)
             return;
-        [[MKExecutor executor] runCommand:cmd];
+        [MKExecutor spawnCommand:cmd];
     }
 }
 

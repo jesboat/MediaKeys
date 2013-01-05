@@ -8,36 +8,28 @@
 
 
 #import "MKExecutor.h"
+#import "../arc.h"
 
-
-static MKExecutor* theExecutor = nil;
+static NSFileHandle* devnull = nil;
 
 
 @implementation MKExecutor
 
-+(MKExecutor*)executor
++(void)initialize
 {
-    if (theExecutor == nil)
-        theExecutor = [[MKExecutor alloc] init];
-    return theExecutor;
-}
-
--(id)init
-{
-    [super init];
     devnull = [NSFileHandle fileHandleWithNullDevice];
-    return self;
 }
 
--(void)runCommand:(NSString*)cmd
++(void)spawnCommand:(NSString*)cmd
 {
-    [NSThread detachNewThreadSelector:@selector(inThread:) toTarget:self withObject:cmd];
+    MKExecutor* exec = maybe_autorelease([[MKExecutor alloc] init]);
+    [NSThread detachNewThreadSelector:@selector(inThread:) toTarget:exec withObject:cmd];
 }
 
 -(void)inThread:(NSString*)cmd
 {
     @autoreleasepool {
-        NSTask* tsk = [[NSTask alloc] init];
+        NSTask* tsk = maybe_autorelease([[NSTask alloc] init]);
         @try {
             [tsk setStandardInput:devnull];
             [tsk setStandardOutput:devnull];
@@ -51,9 +43,6 @@ static MKExecutor* theExecutor = nil;
         }
         @catch (NSException* exception) {
             NSLog(@"Throwing away exception when launching command '%@': %@", cmd, exception);
-        }
-        @finally {
-            [tsk release];
         }
     }
 }
