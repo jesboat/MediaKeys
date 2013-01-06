@@ -12,7 +12,6 @@
 		FC3936ED16983ED400018B9D /* MKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3936EC16983ED400018B9D /* MKAppDelegate.m */; };
 		FC3936F016983ED400018B9D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC3936EE16983ED400018B9D /* MainMenu.xib */; };
 		FC3936F8169868B000018B9D /* SPMediaKeyTap.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3936F7169868B000018B9D /* SPMediaKeyTap.m */; };
-		FC3936FC169868D800018B9D /* NSObject+SPInvocationGrabbing.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3936FB169868D800018B9D /* NSObject+SPInvocationGrabbing.m */; };
 		FC3936FF16987C0A00018B9D /* MKExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3936FE16987C0A00018B9D /* MKExecutor.m */; };
 		FC3937011698863A00018B9D /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3937001698863A00018B9D /* Carbon.framework */; };
 /* End PBXBuildFile section */
@@ -31,8 +30,6 @@
 		FC3936EF16983ED400018B9D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		FC3936F6169868B000018B9D /* SPMediaKeyTap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPMediaKeyTap.h; path = SPMediaKeyTap/SPMediaKeyTap.h; sourceTree = "<group>"; };
 		FC3936F7169868B000018B9D /* SPMediaKeyTap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPMediaKeyTap.m; path = SPMediaKeyTap/SPMediaKeyTap.m; sourceTree = "<group>"; };
-		FC3936FA169868D800018B9D /* NSObject+SPInvocationGrabbing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+SPInvocationGrabbing.h"; path = "SPMediaKeyTap/SPInvocationGrabbing/NSObject+SPInvocationGrabbing.h"; sourceTree = "<group>"; };
-		FC3936FB169868D800018B9D /* NSObject+SPInvocationGrabbing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+SPInvocationGrabbing.m"; path = "SPMediaKeyTap/SPInvocationGrabbing/NSObject+SPInvocationGrabbing.m"; sourceTree = "<group>"; };
 		FC3936FD16987C0A00018B9D /* MKExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKExecutor.h; sourceTree = "<group>"; };
 		FC3936FE16987C0A00018B9D /* MKExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKExecutor.m; sourceTree = "<group>"; };
 		FC3937001698863A00018B9D /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
@@ -109,8 +106,6 @@
 		FC3936F9169868BB00018B9D /* SPMediaKeyTap */ = {
 			isa = PBXGroup;
 			children = (
-				FC3936FA169868D800018B9D /* NSObject+SPInvocationGrabbing.h */,
-				FC3936FB169868D800018B9D /* NSObject+SPInvocationGrabbing.m */,
 				FC3936F6169868B000018B9D /* SPMediaKeyTap.h */,
 				FC3936F7169868B000018B9D /* SPMediaKeyTap.m */,
 			);
@@ -183,7 +178,6 @@
 				FC3936E616983ED400018B9D /* main.m in Sources */,
 				FC3936ED16983ED400018B9D /* MKAppDelegate.m in Sources */,
 				FC3936F8169868B000018B9D /* SPMediaKeyTap.m in Sources */,
-				FC3936FC169868D800018B9D /* NSObject+SPInvocationGrabbing.m in Sources */,
 				FC3936FF16987C0A00018B9D /* MKExecutor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
